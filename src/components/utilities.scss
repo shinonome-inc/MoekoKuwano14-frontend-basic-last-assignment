@@ -2,4 +2,13 @@
 
 body {
   font-family: $fontfamily-gothic;
+
+  a{
+    text-decoration: none;
+    color: inherit;
+
+    &:hover{
+      color: $white;
+    }
+  }
 }
