@@ -2,19 +2,18 @@
 
 .modBtn{
   display: flex;
-  font-family: $fontfamily-gothic;
   align-items: center;
   justify-content: center;
   font-size: $fontsize-s;
   color: $white;
   background-color: $black;
   transition: 0.2s ease;
+  height: 55px;
   &:hover{
     background-color: $orange_bistre;
   }
   @media (min-width: $breakpoint-lg) {
     width: 200px;
-    height: 55px;
   }
   @media (max-width: $breakpoint-md) {
     width: 180px;
@@ -22,6 +21,5 @@
   }
   @media (min-width: $breakpoint-md) and (max-width: $breakpoint-lg) {
     width: 150px;
-    height: 55px;
   }
 }
