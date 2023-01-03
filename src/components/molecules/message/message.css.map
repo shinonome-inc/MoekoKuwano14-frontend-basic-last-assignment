@@ -1,0 +1,1 @@
+{"version":3,"sources":["message.scss","message.css","../../_variables.scss"],"names":[],"mappings":"AAEA;EACE,kBAAA;EACA,gBAAA;EACA,kBAAA;ACDF;ADEE;EACE,eEUU;EFTV,mCEkBgB;EFjBhB,iBAAA;ACAJ;ADEE;EACE,eEES;EFDT,iBAAA;EACA,SAAA;ACAJ;ADEE;EACE;IACE,mBAAA;ECAJ;AACF;ADEE;EAnBF;IAoBI,kBAAA;ECCF;EDAE;IACE,eERO;IFSP,iBAAA;IACA,kBAAA;ECEJ;EDAE;IACE,iBAAA;ECEJ;AACF","file":"message.css"}

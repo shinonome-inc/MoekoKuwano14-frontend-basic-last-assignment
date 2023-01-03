@@ -3,7 +3,7 @@
 .modMessage{
   text-align: center;
   font-weight: 400;
-  padding: 52px 0;
+  padding: 52px 20px;
   h1{
     font-size: $fontsize-xl;
     font-family: $fontfamily-mincho;
@@ -12,14 +12,15 @@
   p{
     font-size: $fontsize-s;
     line-height: 36px;
+    margin: 0;
   }
   @media (min-width: $breakpoint-lg) {
     h1{
       margin-bottom: 10px;
     }
   }
-  @media (max-width: $breakpoint-md) {
-    padding: 32px 0;
+  @media (max-width: $breakpoint-lg) {
+    padding: 32px 20px;
     h1{
       font-size: $fontsize-l;
       line-height: 30px;
