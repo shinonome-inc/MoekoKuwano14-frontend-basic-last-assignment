@@ -12,14 +12,14 @@
   &:hover{
     background-color: $orange_bistre;
   }
-  @media (min-width: $breakpoint-lg) {
-    width: 200px;
+  @media (min-width: $breakpoint-md) {
+    width: 150px;
   }
   @media (max-width: $breakpoint-md) {
     width: 180px;
     height: 45px;
   }
-  @media (min-width: $breakpoint-md) and (max-width: $breakpoint-lg) {
-    width: 150px;
+  @media (min-width: $breakpoint-lg) {
+    width: 200px;
   }
 }
