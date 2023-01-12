@@ -1,0 +1,25 @@
+@use "../../variables" as *;
+
+.modBtn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: $fontsize-s;
+  color: $white;
+  text-decoration: none;
+  background-color: $black;
+  transition: 0.2s ease;
+  height: 55px;
+  width: 200px;
+  &:hover{
+    background-color: $orange_bistre;
+    color: $white;
+  }
+  @media (max-width: $breakpoint-lg) {
+    width: 150px;
+  }
+  @media (max-width: $breakpoint-md) {
+    width: 180px;
+    height: 45px;
+  }
+}
