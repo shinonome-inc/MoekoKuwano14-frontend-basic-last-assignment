@@ -1,0 +1,47 @@
+@use "../../variables" as *;
+
+.card{
+  border: none;
+  border-radius: 0%;
+  @media (max-width: $breakpoint-md) {
+    transition: none;
+  }
+  .wrap{
+    overflow: hidden;
+    margin-bottom: 0;
+    .card-img{
+      transition: 0.5s ease;
+      border-radius: 0%;
+      &:hover{
+        transform: scale(1.2);
+        @media (max-width: $breakpoint-md) {
+          transform: none;
+        }
+      }
+    }
+  }
+  .triangle{
+    position: absolute;
+    border-bottom: 150px solid transparent;
+    border-left: 150px solid $white;
+  }
+  .card-title{
+    position: absolute;
+    font-size: $fontsize-l;
+    color: $orange_bistre;
+    font-weight: 700;
+    line-height: 29px;
+    left: 6px;
+  }
+  .card-body{
+    background-color: $white_smoke;
+    padding: 32px;
+    .card-text{
+      line-height: 33.4px;
+      margin-bottom: 30px;
+    }
+    .modBtn{
+      margin: 0 auto;
+    }
+  }
+}
