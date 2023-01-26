@@ -1,0 +1,67 @@
+@use "../../variables" as *;
+
+.plan{
+  text-align: center;
+  font-family: $fontfamily-gothic;
+  height: 456px;
+  @media (min-width: $breakpoint-md) {
+    float: left;
+  }
+  @media (max-width: $breakpoint-md) {
+    margin-bottom: 24px;
+  }
+  .plan-text{
+    background-color: $orange_zorba;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    h3{
+      color: $white;
+      margin-bottom: 0;
+      font-size: $fontsize-l;
+    }
+  }
+  .plan-wrap{
+    border: 1px solid $gray_gainsboro;
+    .plan-price{
+      background-color: $gray_desertStorm;
+      padding: 24px 0;
+      height: 142px;
+      h3{
+        font-size: $fontsize-xxl;
+        font-weight: 700;
+        color: $orange_bistre;
+        margin-bottom: 16px;
+        .dollar{
+          font-size: $fontsize-l;
+          margin-right: 4px;
+        }
+      }
+      .monthly{
+        font-size: $fontsize-s;
+        font-weight: 400;
+        color: $black;
+      }
+    }
+    .plan-detail{
+      .list{
+        padding: 0px;
+        margin: 0;
+        font-size: $fontsize-s;
+        .list-item{
+          list-style: none;
+          padding: 20px;
+          border-top: 1px solid $gray_gainsboro;
+        }
+      }
+    }
+  }
+}
+.plan:nth-child(even){
+  outline: 5px solid $orange_bistre;
+  outline-offset: -5px;
+  .plan-text{
+    background-color: $orange_bistre;
+  }
+}
