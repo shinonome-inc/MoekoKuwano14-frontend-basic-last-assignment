@@ -1,12 +1,8 @@
 @use "../../variables" as *;
 
 .plan-assets{
-  @media (min-width: $breakpoint-md) {
-    display: flex;
-  }
   .plan{
     text-align: center;
-    font-family: $fontfamily-gothic;
     width: 100%;
     @media (max-width: $breakpoint-md) {
       margin-bottom: 24px;
