@@ -3,15 +3,27 @@
 .top{
   color: $white;
   .top-img{
-    height: 100vh;
     position: relative;
-    @media (max-width:$breakpoint-md) {
-      height: 360px;
+    &-pc{
+      height: 100vh;
+    }
+    &-sp{
+      display: none;
+    }
+    @media (max-width:$breakpoint-lg) {
+      &-pc{
+        display: none;
+      }
+      &-sp{
+        display: block;
+        width: 100%;
+        height: 360px;
+      }
     }
     img{
       width: 100%;
       height: 100%;
-      @media (max-width:$breakpoint-md) {
+      @media (max-width:$breakpoint-lg) {
         height: 100%;
       }
     }
@@ -25,7 +37,8 @@
       writing-mode: vertical-rl;
       margin: 0;
       line-height: 46px;
-      @media (max-width:$breakpoint-md) {
+      font-weight: 400;
+      @media (max-width:$breakpoint-lg) {
         font-size: $fontsize-l;
         line-height: 30px;
       }
