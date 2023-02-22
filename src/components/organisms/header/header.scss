@@ -7,6 +7,7 @@
   @media (max-width: $breakpoint-xl) {
     height: 60px;
     background-color: $black;
+    padding: 11px 0;
   }
   .navbar-brand{
     margin-right: 0;
@@ -22,7 +23,7 @@
   }
   .navbar-toggler{
     border: none;
-    margin-right: 4px;
+    margin-right: 16px;
     &:focus{
       box-shadow: none;
     }
@@ -35,7 +36,7 @@
     margin-right: 30px;
     @media (max-width:$breakpoint-xl) {
       margin-right: 0;
-      margin-top: 12px;
+      margin-top: 11px;
       background-color: black;
     }
   }
@@ -58,6 +59,10 @@
   }
   .dropdown-menu{
     font-size: $fontsize-s;
+    border: none;
+  }
+  .dropdown-menu[data-bs-popper]{
+    margin-top: 0;
   }
   .dropdown-menu-dark{
     padding: 0;
