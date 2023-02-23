@@ -113,6 +113,7 @@
     .dropdown-item{
       padding: 18px;
       transition: 0.2s ease;
+      color: $white;
       &:hover{
         background-color: $orange_bistre;
       }
@@ -120,7 +121,6 @@
         padding-left: 28px;
         background-color: $black;
         &:hover{
-          color: $white;
           background-color: $black;
         }
       }
