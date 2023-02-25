@@ -1,0 +1,17 @@
+@use "../../variables" as *;
+
+.cards{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 100px;
+  @media (max-width:$breakpoint-md) {
+    display: block;
+  }
+  .card{
+    width: 31%;
+    @media (max-width:$breakpoint-md) {
+      width: 100%;
+      margin-bottom: 40px;
+    }
+  }
+}
