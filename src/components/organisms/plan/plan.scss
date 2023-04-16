@@ -1,12 +1,14 @@
 @use "../../variables" as *;
 
 .mol-plan{
+  margin-top: 56px;
   .modMessage{
     padding-top: 0;
     padding-bottom: 56px;
     h2{
       font-size: $fontsize-l;
       color: $orange_bistre;
+      margin-bottom: 6px;
     }
     p{
       font-size: $fontsize-s;
@@ -15,7 +17,7 @@
   .plan-assets{
     .plan{
       margin-bottom: 24px;
-      @media (max-width:$breakpoint-lg) {
+      @media (min-width:$breakpoint-lg) {
         margin-bottom: 40px;
         margin-right: 30px;
         &:nth-child(3){
@@ -23,7 +25,7 @@
         }
       }
     }
-    @media (max-width:$breakpoint-lg) {
+    @media (min-width:$breakpoint-lg) {
       display: flex;
     }
   }
